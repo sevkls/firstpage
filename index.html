@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/png" sizes="8x8" href="./logo-sco.png">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevda.co</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <a href="#" class="scroll top">Haut</a>
+    <a href="#finish" class="scroll down">Bas</a>
+    <header>
+        <a href="index.html" class="logo"> Sevda.co</a>
+        
+</a>
+        <ul>
+            <li>
+                <a href="index.html" class="active"> Accueil </a>
+            </li>
+            <li><a href="#sec"> À propos de moi </a></li>
+            <li><a href="#contact.html"> Contact </a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Bienvenue, visiteur.</h2>
+        <a href="#sec" id="btn"> J'explore...</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        
+<div class="switch">
+        <h2>Nintendo Switch</h2>
+        <div class = "row">
+            <div class = "tdimension">
+                <a href = "./switch/switch.html">
+                </a>
+        </div>
+    </div>
+</div>
+
+
+	</div>
+
+
+
+
+
+    <!-- JavaScript, pour que les éléments en arrière plan bougent. -->
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3.5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    <div id="finish"></div>
+</body>
+
+</html>
