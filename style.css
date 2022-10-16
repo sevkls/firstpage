@@ -12,9 +12,9 @@ body{ /*OK*/
     text-align: center;
     position: absolute;
     margin-bottom: 25%;
-    padding:100 0 100 0;
+    padding: 0 0 25rem 0;
     background-size: 800% 800%;    
-    font-size: 3vw;
+    font-size: 5vw;
     background-image: linear-gradient(90deg, rgb(205, 193, 212) 10%, rgb(66, 66, 209) 35%);
         -webkit-text-fill-color: transparent; /*rend transparent le text */
 -webkit-background-clip: text; 
