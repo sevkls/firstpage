@@ -1,0 +1,27 @@
+body{
+    background-color: #51377c;
+}
+.images-galerie {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images-galerie > img {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: scale 350ms ease, opacity 350ms linear;
+    
+    transition: all 2s ease-in-out;
+}
+
+.images-galerie:has(img:hover) img:not(:hover){
+    scale: .8;
+    opacity: .7;
+}
+
+ 
