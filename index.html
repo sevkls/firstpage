@@ -1,48 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Silkscreen:wght@400;700&display=swap');</style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./images/logo-arici.png" sizes="16x16" >
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arici</title>
-</head>
+    <html lang="en">
+        <link rel="icon" type="image/png" sizes="8x8" href="./logo-sco.png">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="logo.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+            <title>À propos de moi</title>
+    </head>
+
+
 <body>
-<div class="navbar">
-    <a href="index.html" class="logo"> Arici </a>
-    <div class="nav-links">
-        <ul>
-            <li class="active"> <a href="menu.html">Menu</a></li>
-            <li> <a href="#">Horaires</a></li>
-            <li> <a href="#">+ D'informations</a></li>
-            <li> <a href="contact.html">Nous contacter</a></li>
-        </ul>
+
+    <a href="#" class="fa fa-chevron-up scroll top"></a>
+    <a href="#finish" class="fa fa-chevron-down scroll down"></a>
+    <header>
+        <a href="index.html" class="logo"> Sevda.co</a>
+        
+</a>
+
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Bienvenue, visiteur.</h2>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+ 
+        <div class="projets">
+<div class="switch">
+        <h2>Nintendo Switch</h2>
+        <div class = "row">
+            <div class = "tdimension">
+                <a href = "./switch/switch.html">
+                </a>
+        </div>
     </div>
-    <img src="./images/plus.png" alt="menu lateral" class="menu-lateral">
+</div>
+
+<div class="has_test">
+    <h2>Has() Test</h2>
+    <div class = "row">
+        <div class = "tdimension2">
+            <a href = "./test_has/test_has.html">
+            </a>
     </div>
+</div>
+</div>
 
-    <div class="container">
-       <h1> Bienvenue à la <br> Boulangerie Arici
-       </h1>
-       <button class="texte" type="button">En savoir plus</button>
+<div class="boulangerie_arici">
+    <h2>Boulangerie Arici</h2>
+    <div class = "row">
+        <div class = "tdimension3">
+            <a href = "./arici/index.html">
+            </a>
     </div>
+</div>
+</div>
+
+<div class="card">
+    <h2>Cards</h2>
+    <div class = "row">
+        <div class = "tdimension4">
+            <a href = "./cards/card.html">
+            </a>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+	</div>
 
 
-<script>
-    const menuLateral = document.querySelector(".menu-lateral")
-    const navLinks = document.querySelector(".nav-links")
 
-    menuLateral.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-</script>
 
+
+    <!-- JavaScript, pour que les éléments en arrière plan bougent. -->
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3.5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    <div id="finish"></div>
+    
 </body>
-
 </html>
