@@ -166,7 +166,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: url("./switch/images/switch-hover.png");
+        background: url("switch-hover.png");
         background-size: cover;
         transform-style: preserve-3d;
         transform: rotateX(70deg);
@@ -218,7 +218,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: url("test_has/hasphoto.png");
+        background: url("hasphoto.png");
         background-size: cover;
         transform-style: preserve-3d;
         transform: rotateX(70deg);
@@ -260,7 +260,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: url("./arici/images/Arici.png");
+        background: url("Arici.png");
         background-size: cover;
         transform-style: preserve-3d;
         transform: rotateX(70deg);
@@ -303,7 +303,7 @@
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
-        background: url("./cards/Cards.png");
+        background: url("Cards.png");
         background-size: cover;
         transform-style: preserve-3d;
         transform: rotateX(70deg);
